@@ -1,0 +1,450 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+
+/* navbar styling */
+
+
+#navbar{
+    display:flex;
+    position: fixed;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgba(0, 0, 0, 0.416);
+    margin-left: 0px;
+    height: 60px;
+    width: 100%;
+    border-radius: 0x;
+    -webkit-border-radius: 0x;
+    -moz-border-radius: 0x;
+    -ms-border-radius: 0x;
+    -o-border-radius: 0x;
+}
+
+/* navbar: logo and img */
+#logo{
+    margin: 10px 10px;
+}
+#logo a img{
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: transform 0.5s ease-in-out;
+    -moz-transition: transform 0.5s ease-in-out;
+    -ms-transition: transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+}
+#logo a img:hover{
+    transform: scale(1.1,1.2);
+    -webkit-transform: scale(1.1,1.2);
+    -moz-transform: scale(1.1,1.2);
+    -ms-transform: scale(1.1,1.2);
+    -o-transform: scale(1.1,1.2);
+}
+#navbar img{
+    margin: 10px 10px;
+    height: 40px;
+}
+
+/* navbar : list styling */
+
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+}
+#navbar ul li a{
+
+    display: block;
+    padding: 10px;
+    list-style: none;
+    color: aliceblue;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+  background-color: azure;
+  color: black;
+}
+
+
+/* styling home section */
+
+
+#home{
+    background-image: url("../pumpkins-gb84c74a29_1920.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+    
+}
+
+#home .h-primary{
+    font-size: 2.8rem;
+    color:white;
+    padding: 10px;
+}
+
+#home p{
+    font-size: 1rem;
+    color:white;
+    padding: 3px;
+}
+
+#home .btn{
+    color: aliceblue;
+    padding: 5px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    border: solid 2px white;
+    border-radius: 10px;
+    background-color: brown;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#home .btn:hover{
+    background-color: white;
+    border: solid 2px black;
+    color: black;
+    cursor: pointer;
+}
+#home .hm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 140px;
+    background-color: rgba(0, 0, 0, 0.345);
+
+    font-family: 'Oswald', sans-serif;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+
+/*  services section */
+
+#services{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    text-align: center;
+    height: 100%;
+}
+
+#services .h-ser{
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: 'Oswald', sans-serif;
+    margin: 20px;
+}
+
+#services .main-div{
+    display: flex;
+    padding-top: 30px;
+    
+}
+#services .main-div .child-div{
+    background-color: rgb(248, 245, 242);
+    border: solid black;
+    padding: 20px;
+    margin: 20px;
+    height: 90%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.389);
+    border-radius: 23px;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    -ms-border-radius: 23px;
+    -o-border-radius: 23px;
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: transform 0.5s ease-in-out;
+    -moz-transition: transform 0.5s ease-in-out;
+    -ms-transition: transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+
+
+}
+#services .main-div .child-div img{
+    display: block;
+    height: 100px;
+    margin: auto;
+}
+#services .main-div .child-div p{
+    text-align: center;
+    margin: 10px;
+}
+#services .main-div .child-div .h-sec{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    margin: 10px;
+}
+
+#services .main-div .child-div:hover{
+    transform: translate(2px,-13px);
+    -webkit-transform: translate(2px,-13px);
+    -moz-transform: translate(2px,-13px);
+    -ms-transform: translate(2px,-13px);
+    -o-transform: translate(2px,-13px);
+}
+
+
+
+/* clients section  */
+
+#client{
+    display: relative;
+    height: 500px;
+}
+#client::before{
+    content: "";
+    position: absolute;
+    background-image: url("../social-g360c518f7_1920.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    opacity: 0.3;
+    z-index: -1;
+    margin-top: 110px;
+}
+
+
+
+
+#client .h-cl{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-top: 10px;
+    
+    
+
+}
+
+#client #clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding-top: 100px;
+
+}
+
+#client #clients .our-clients {
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    padding: 10px;
+    margin-top: 100px;
+    margin: 10px;
+    
+
+}
+#client #clients .our-clients img{
+    height: 100px;
+    display: block;
+    margin: auto;
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: transform 0.5s ease-in-out;
+    -moz-transition: transform 0.5s ease-in-out;
+    -ms-transition: transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+
+}
+#client #clients .our-clients img:hover{
+    transform: scale(1.1,1.2);
+    -webkit-transform: scale(1.1,1.2);
+    -moz-transform: scale(1.1,1.2);
+    -ms-transform: scale(1.1,1.2);
+    -o-transform: scale(1.1,1.2);
+}
+
+
+/* contact section */
+
+#contact{
+    height: 540px;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background-image: url("../social-g360c518f7_1920.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    margin-top: 90px;
+    opacity: 0.3;
+    z-index: -1;
+    /* margin-top: 70px; */
+
+
+}
+
+#contact .h-cl{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#contact #contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#contact #contacts .for-group{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+#contact #contacts label{
+    font-size: 1.2rem;
+    margin: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+#contact #contacts form input,textarea{
+    border-radius: 2px solid black;
+    border-radius: 23px;
+    padding: 6px;
+    width: 200px;
+    /* padding: 10px; */
+    border: solid black;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    -ms-border-radius: 23px;
+    -o-border-radius: 23px;
+}
+#contact #contacts form{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contact #contacts form .btn{
+    color: aliceblue;
+    padding: 10px;
+    /* margin-right: 50px; */
+    margin-bottom: 20px;
+    align-self: center;
+    width: 150px;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 1rem;
+    border: solid 2px white;
+    border-radius: 15px;
+    background-color: brown;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+#contact #contacts form .btn:hover{
+    background-color: white;
+    border: solid 2px black;
+    color: black;
+    cursor: pointer;
+}
+
+/* footer */
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 8px 8px;
+}
+
+
+/* utility classes */
+
+
+.headSize{
+    font-size: 2.6rem;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+@media only screen and (max-width: 690px){
+
+     #contact::before{
+        margin-top: 65px;
+     }
+     .btn2{
+        width: 150px;
+     }
+     #contact #contacts form input,textarea{
+        width: 200px;
+     }
+     #contact #contacts form div{
+        width: 100%;
+     }
+
+}
+@media only screen and (max-width: 620px) {
+    #client{
+        /* background-color: aqua; */
+        height: 350px;
+        
+    }
+    #client::before{
+        margin-top: 80px;
+        height: 250px;
+    }
+    #client #clients .our-clients img{
+        height: 70px;
+    }
+    #client #clients .our-clients {
+        margin-top: 10px;
+    }
+
+    #contact{
+        height: 500px;
+    }
+
+    #contact::before{
+        margin-top: 55px;
+        height: 450px;
+    }
+    .headSize{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+   
+  }
+  @media only screen and (max-width: 444px) {
+    #client #clients .our-clients img{
+        height: 60px;
+    }
+
+  }
+  @media only screen and (max-width: 444px) {
+    #client #clients .our-clients img{
+        height: 45px;
+    }
+
+  }
